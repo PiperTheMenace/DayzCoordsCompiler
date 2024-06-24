@@ -1,3 +1,5 @@
+#Import coords directly from Izurvive for best results
+import sys
 def format_coordinates(coord_list):
     coordinates = coord_list.split(" | ")
     formatted_xml = ""
@@ -7,7 +9,7 @@ def format_coordinates(coord_list):
     return formatted_xml.strip()  # Remove trailing newline
 
 def main():
-    coordinates_input = "X / Z | X / Z"
+    coordinates_input = " "
     formatted_xml = format_coordinates(coordinates_input)
     
     print("\nFormatted coordinates in XML format:")
